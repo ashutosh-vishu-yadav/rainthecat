@@ -1,0 +1,50 @@
+@import url(ui-variables.css);
+#nav { float: auto; background-color: black; }
+
+.nav-link { height: 30px; float: right; position: sticky; padding: 5px; margin: auto; text-decoration: none; }
+
+footer { clear: both; background-color: #091b45; margin: auto; padding: 40px; }
+footer a { color: black; }
+footer p { color: white; text-align: center; }
+footer #footer-list { color: #091b45; }
+footer #footer-list li a { color: white; }
+
+body { margin-left: 40px; margin-right: 40px; background-color: #0d2561; }
+body main { background-color: #d8dfe4; }
+
+/*
+.banner{ position: relative; background: url(bg.jpg); min-height: 100vh; background-size: cover; background-position: center; padding: 250px 0 200px;
+}
+*/
+.heading { text-align: center; }
+
+#tribute-info > p { margin: auto; padding: 5px; background-color: #5f6fa2; }
+
+div { padding: 5px; }
+
+.jumbotron, .footer-div { margin: 0 20% 0 20%; padding: 5%; }
+.jumbotron h1, .footer-div h1 { padding: 20px; margin: 0 -20px 0 -20px; }
+
+/*
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 780px) { .row { display: grid; } .row > .col{ margin:30px; padding: 20px; background-color: #0d2561; }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 576px) { .row { display:flex; } .row > .col{ margin: 30px; padding: 20px; background-color: #0d2561; } }
+*/
+@media (min-width: 1200px) { .row { display: flex; }
+  .row > .col { border-top: 10px solid	#0d2561; color: #eeeeee; margin: 20px; padding: 20px; background-color: #5f6fa2; }
+  .img-fluid { height: 100%; width: 100%; } }
+@media (max-width: 1200px) { .row { display: grid; }
+  .row > .col { color: #eeeeee; border-top: 10px solid #0d2561; margin: 5px; padding: 20px; background-color: #5f6fa2; }
+  .img-fluid { height: 100%; width: 100%; } }
+main { border: solid black; border-radius: 5px; border-color: #d8dfe4; background-color: #eeeeee; }
+
+main { margin: 100px 0 100px; }
+
+div .paragraph, div .question, .lists { list-style: none; position: relative; margin: 10px; padding: 5px; border-color: #3e4444; background-color: #eeeeee; }
+
+.lists li { padding: 5px; }
+
+/*# sourceMappingURL=master.css.map */
