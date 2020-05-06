@@ -37,7 +37,14 @@ footer {
   }
 }
 
-.banner {
+body {
+  background-color: #0d2561;
+  main{
+    background-color: #d8dfe4;
+  }
+}
+/*
+.banner{
   position: relative;
   background: url(bg.jpg);
   min-height: 100vh;
@@ -45,7 +52,7 @@ footer {
   background-position: center;
   padding: 250px 0 200px;
 }
-
+*/
 .heading{
   text-align: center;
 }
@@ -65,14 +72,10 @@ div{
 
 
 
-
-.jumbotron, .footer-div{
+ .footer-div{
   margin: 0 20% 0 20%;
   padding: 5%;
-  h1{
-    padding: 20px;
-    margin: 0 -20px 0 -20px;
-  }
+
 }
 
 /*
@@ -119,21 +122,22 @@ div{
    height: 100%;
    width: 100%;
  }
- .main {
-   margin: 100px 0 100px;
-   @extend %flex-contant;
-   //padding: $normal-padding;
- }
-
- body {
-   font-family: Arial, Helvetica, sans-serif;
+ body{
    margin-left: 40px;
    margin-right: 40px;
-   background-color: #0d2561;
-   main{
-     background-color: #d8dfe4;
+   main {
+     margin: 100px 0 100px;
+     //padding: $normal-padding;
    }
- }
+}
+.jumbotron{
+  margin: 0 20% 0 20%;
+  padding: 5%;
+  h1{
+    padding: 0;
+    margin: 0 -20px 0 -20px;
+  }
+}
 
 }
 
@@ -154,19 +158,15 @@ div{
    height: 100%;
    width: 100%;
  }
-
- .main {
-   @extend %flex-contant;
-   //padding: $normal-padding;
- }
-
- body {
-   font-family: Arial, Helvetica, sans-serif;
-   background-color: #0d2561;
-   main{
-     background-color: #d8dfe4;
+ body{
+   margin-left: 0;
+   margin-right: 0;
+   main {
+     margin: 0 0 0;
+     //padding: $normal-padding;
    }
- }
+}
+
 
 }
 
@@ -178,6 +178,10 @@ div{
   background-color:  	#eeeeee;
 }
 
+main {
+  @extend %flex-contant;
+  //padding: $normal-padding;
+}
 
 %lists {
   list-style: none;
@@ -193,16 +197,4 @@ div{
   li {
     padding: 5px;
   }
-}
-
-//hero-image
-
-
-
-.hero-text button {
-
-}
-
-.hero-text button:hover {
-
 }

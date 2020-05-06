@@ -9,7 +9,7 @@ footer p { color: white; text-align: center; }
 footer #footer-list { color: #091b45; }
 footer #footer-list li a { color: white; }
 
-body { margin-left: 40px; margin-right: 40px; background-color: #0d2561; }
+body { background-color: #0d2561; }
 body main { background-color: #d8dfe4; }
 
 /*
@@ -22,8 +22,7 @@ body main { background-color: #d8dfe4; }
 
 div { padding: 5px; }
 
-.jumbotron, .footer-div { margin: 0 20% 0 20%; padding: 5%; }
-.jumbotron h1, .footer-div h1 { padding: 20px; margin: 0 -20px 0 -20px; }
+.footer-div { margin: 0 20% 0 20%; padding: 5%; }
 
 /*
 // Small devices (landscape phones, 576px and up)
@@ -35,13 +34,17 @@ div { padding: 5px; }
 */
 @media (min-width: 1200px) { .row { display: flex; }
   .row > .col { border-top: 10px solid	#0d2561; color: #eeeeee; margin: 20px; padding: 20px; background-color: #5f6fa2; }
-  .img-fluid { height: 100%; width: 100%; } }
+  .img-fluid { height: 100%; width: 100%; }
+  body { margin-left: 40px; margin-right: 40px; }
+  body main { margin: 100px 0 100px; }
+  .jumbotron { margin: 0 20% 0 20%; padding: 5%; }
+  .jumbotron h1 { padding: 0; margin: 0 -20px 0 -20px; } }
 @media (max-width: 1200px) { .row { display: grid; }
   .row > .col { color: #eeeeee; border-top: 10px solid #0d2561; margin: 5px; padding: 20px; background-color: #5f6fa2; }
-  .img-fluid { height: 100%; width: 100%; } }
+  .img-fluid { height: 100%; width: 100%; }
+  body { margin-left: 0; margin-right: 0; }
+  body main { margin: 0 0 0; } }
 main { border: solid black; border-radius: 5px; border-color: #d8dfe4; background-color: #eeeeee; }
-
-main { margin: 100px 0 100px; }
 
 div .paragraph, div .question, .lists { list-style: none; position: relative; margin: 10px; padding: 5px; border-color: #3e4444; background-color: #eeeeee; }
 
