@@ -42,7 +42,7 @@ div { padding: 5px; }
 @media (max-width: 1200px) { .row { display: grid; }
   .row > .col { color: #eeeeee; border-top: 10px solid #0d2561; margin: 5px; padding: 20px; background-color: #5f6fa2; }
   .img-fluid { height: 100%; width: 100%; }
-  body { margin-left: 0; margin-right: 0; }
+  body { margin: 40px 0 20px 0; }
   body main { margin: 0 0 0; } }
 main { border: solid black; border-radius: 5px; border-color: #d8dfe4; background-color: #eeeeee; }
 
